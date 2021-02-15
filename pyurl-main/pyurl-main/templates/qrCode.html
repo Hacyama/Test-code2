@@ -1,0 +1,10 @@
+<canvas id="canvas"></canvas>
+<script src="https://alpha.fio.one/js/qrcode.min.js"></script>
+<div id="qrcode"></div>
+<script>
+    
+    QRCode.toCanvas(document.getElementById('canvas'), "{{link}}", function (error) {
+      if (error) console.error(error)
+      console.log('success!');
+    })
+</script> 

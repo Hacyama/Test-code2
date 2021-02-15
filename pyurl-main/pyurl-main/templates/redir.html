@@ -1,0 +1,9 @@
+<body>
+	<p style="display:none">Redirecting to <a id="url" href="{{url}}" value="{{url}}">{{url}}</a>....</p>
+	<script>
+		window.onload = function() {
+			var target = document.getElementById('url').href;
+			window.location.replace(target);
+		}
+	</script>
+</body>
